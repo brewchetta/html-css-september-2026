@@ -172,3 +172,19 @@ header, main {
     margin-left: 1em;
     margin-right: 1em;
 }
+
+html {
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+nav {
+    position: static;
+}
+
+@media (min-width: 576px) {
+    nav {
+        position: sticky;
+    }
+}
