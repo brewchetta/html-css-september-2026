@@ -1,7 +1,18 @@
 body {
     background-color: #555;
     margin: 20px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.75;
 }
+
+/* #centered {
+    height: 5px;
+    width: 5px;
+    border: solid red 2px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+} */
 
 section {
     background-color: #fff;
@@ -29,4 +40,80 @@ header {
 footer {
     color: #ccc;
     text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h1 + p {
+    font-weight: 700;
+    font-style: italic;
+}
+
+h3 + p {
+    font-weight: 700;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #97d0f2;
+}
+
+header, section {
+    border: 4px solid #2fb3fe;
+    margin-bottom: 30px;
+}
+
+h3 {
+    background: #2fb3fe;
+    color: white;
+    padding: 15px;
+    margin-top: 0;
+}
+
+img {
+    vertical-align: bottom;
 }
