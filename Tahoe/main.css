@@ -117,3 +117,58 @@ h3 {
 img {
     vertical-align: bottom;
 }
+
+/* "*" stands for EVERYTHING */
+* {
+    /* border box means the element + padding + border will be an exact size */
+    box-sizing: border-box;
+}
+
+section p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* <a> inside of <section> */
+section a {
+    color: #2fb3fe;
+    text-decoration: none;
+}
+
+section a img {
+    vertical-align: baseline;
+    margin-left: 0.5em;
+    /* em will scale with your text size */
+    height: 1em;
+}
+
+nav {
+    /* works and behaves as expected */
+    position: static;
+    /* we can position the element relative to where it would sit && it still affects layout */
+    position: relative;
+    /* position in an absolute spot on the screen && no layout */
+    position: absolute;
+    /* position in a fixed point on the screen EVEN IF WE SCROLL */
+    position: fixed;
+    /* position is static until it's 0px from the top of the screen at which point it scrolls... IT AFFECTS A LAYOUT */
+    position: sticky;
+
+    top: 0;
+    background: #000a;
+    z-index: 1;
+    backdrop-filter: blur(5px) saturate(0%);
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main {
+    margin-left: 1em;
+    margin-right: 1em;
+}
