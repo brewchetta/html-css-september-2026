@@ -1,0 +1,32 @@
+body {
+    background-color: #555;
+    margin: 20px;
+}
+
+section {
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    /* background-image: url(img/masthead.jpg);
+    background-position: center;
+    background-size: cover; */
+    background: url(img/masthead.jpg) center / cover;
+    color: #fff;
+    text-align: center;
+    padding:50px;
+}
+
+footer {
+    color: #ccc;
+    text-align: center;
+}
