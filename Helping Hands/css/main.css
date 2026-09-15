@@ -1,3 +1,70 @@
+/* OUR FORM STYLES */
+
+form {
+	border: #888 1px solid;
+	border-radius: 0 0 8px 8px;
+	padding: 1em;
+}
+
+/* > means direct children of */
+form > label {
+	display: block;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select,
+input[type="email"] {
+	min-width: 10em;
+	max-width: 100%;
+	field-sizing: content;
+
+	border: none;
+	background: lightblue;
+	padding: 0.25em;
+	border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus,
+input[type="email"]:focus {
+	background: lightgoldenrodyellow;
+	outline: solid 1px black;
+}
+
+textarea {
+	width: 100%;
+	resize: none;
+	min-height: 3lh;
+	max-height: 20lh;
+	field-sizing: content;
+}
+
+input[type="submit"] {
+	border: none;
+	padding: 1em;
+	margin-top: 1em;
+	border-radius: 4px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+	box-shadow: 0px 4px 4px #000;
+	position: relative;
+	top: 0;
+	transition: top 0.1s;
+}
+
+input[type="submit"]:active {
+	top: 3px;
+}
+
+/* PREVIOUS STYLES */
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
