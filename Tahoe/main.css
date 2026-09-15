@@ -188,3 +188,108 @@ nav {
         position: sticky;
     }
 }
+
+/* DAY TWO */
+
+body {
+    /* background-image: repeating-linear-gradient(225deg, 
+    brown, brown 200px, 
+    green 200px, green 300px, 
+    lightblue 300px, lightblue 400px); */
+}
+
+header {
+    background: 
+    linear-gradient(rgb(255, 166, 0), transparent),
+    url(img/masthead.jpg) center / cover;
+}
+
+h1 {
+    background: linear-gradient(green, blue);
+    /* the background will only appear under the text */
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(50px, 7.5vw, 80px);
+}
+
+:root {
+    --nuclear-green: #65cb00;
+}
+
+header {
+    border-color: var(--nuclear-green);
+}
+
+section {
+    border-color: var(--nuclear-green);
+}
+
+section a {
+    color: var(--nuclear-green);
+}
+
+h3 {
+    background-color: var(--nuclear-green);
+    text-shadow: 
+        2px 2px 0px #f88e2a,
+        -2px 2px 0px #f88e2a,
+        2px -2px 0px #f88e2a,
+        -2px -2px 0px #f88e2a;
+}
+
+section img {
+    filter: hue-rotate(190deg);
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        gap: 0.75em;
+        align-items: start;
+    }
+
+    main section {
+        width: 33.3%
+    }
+
+    main h2 {
+        /* does not show but still takes up space */
+        /* visibility: hidden; */
+        /* display none completely removes it from layout */
+        display: none;
+    }
+}
+
+/* ::after is a pseudo-element */
+.learn-more::after {
+    content: " ☢️";
+}
+
+/* $= means it ends with */
+a[href$=".pdf"] {
+    background: url(img/icon-pdf.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding-right: 1.5em;
+}
+
+/* ^= means starts with */
+a[href^="https://www"] {
+    background: url(img/icon-external-link.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 1.5em;
+}
+
+/* *= means it includes */
+a[href*="youtube.com"] {
+    background: url(img/icon-youtube.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 1.5em;
+}
+
+img[src$=".jpg"] {
+    transform: rotate(180deg);
+}

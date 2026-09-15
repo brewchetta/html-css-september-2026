@@ -1,3 +1,30 @@
+/* OUR CSS */
+
+section:first-child,
+section:nth-child(3) {
+	margin-top: 48px;
+}
+
+main.price-list {
+	align-items: stretch;
+}
+
+.text-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%; 
+}
+
+.price {
+	margin-top: auto;
+}
+
+section:nth-child(2) .price {
+	margin-top: 0;
+}
+
+/* PREVIOUS CSS */
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
