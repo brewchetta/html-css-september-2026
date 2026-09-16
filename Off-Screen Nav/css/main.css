@@ -1,3 +1,62 @@
+/* OUR CSS */
+
+/* hide to the checkbox ALWAYS */
+#navbar-checkbox {
+	display: none;
+}
+
+/* do different styles at 700px or less */
+@media (max-width: 700px) {
+	/* hide fixed navbar on left of screen */
+	nav {
+		position: fixed;
+		width: 12em;
+		height: 100%;
+		left: -12em;
+		transition: left 0.2s;
+	}
+
+	/* anytime I check the checkbox, the nav gets styled */
+	#navbar-checkbox:checked ~ nav {
+		left: 0em;
+	}
+	/* put hamburger button in upper left corner */
+	#hamburger-button {
+		position: absolute;
+		top: 0.5rem;
+		right: 1rem;
+	}
+}
+
+/* do different styles at 701px or more */
+@media (min-width: 701px) {
+	body nav ul {
+		display: flex;
+		justify-content: end;
+		padding-right: 1em;
+	}
+	/* hide button on large screens */
+	#hamburger-button {
+		display: none;
+	}
+}
+
+/* mask shows only when the checkbox is clicked */
+#navbar-mask {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#navbar-checkbox:checked + #navbar-mask {
+	display: block;
+}
+
+/* PREVIOUS CSS */
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
